@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__body">
+                <img class="header__body-logo" src="./png/logo.png" alt="">
+                <ul class="nav__menu">
+                    <a href="#section"><li class="nav__menu-item">Ігри</li></a>
+                    <a href="#testimonials"><li class="nav__menu-item">Про нас</li></a>
+                    <a href="#prising"><li class="nav__menu-item">Донати</li></a>
+                    <a href="#service"><li class="nav__menu-item">Інформація</li></a>
+                </ul>
+            <a href="#present"><button class="header__body-button" type="button">GoITeens</button></a>
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-lines"></div>
+                <div class="burger-lines"></div>
+                <div class="burger-lines"></div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav__menu">
+                <a href="#section"><li class="nav__menu-item">Ігри</li></a>
+                <a href="#testimonials"><li class="nav__menu-item">Про нас</li></a>
+                <a href="#prising"><li class="nav__menu-item">Донати</li></a>
+                <a href="#service"><li class="nav__menu-item">Інформація</li></a>
+            </ul>
+        </div>
+    </header>
+    <main>
+            <div id="section" class="section">
+                <div class="section__content">
+                    <div class="section__text">
+                        <h5 class="section__text-heading">Ігри</h5>
+                        <h1 class="section__text-caption">Сайт наших ігор</h1>
+                        <p class="section__text-lead">Наш сайт принесе вам купу різних та яскравих емоцій, завдяки розважальному контенту.</p>
+                        <div class="section__block">
+                            <a href="#features"><button class="section__block-button" type="button">Explore Work</button></a>
+                        </div>
+                    </div>
+                    <img class="pic-one" src="./png/pic1.png" alt="">
+            </div>
+            </div>
+            <hr>
+            <div id="features" class="features">
+                <div class="features__content">
+                    <div class="features__block-text">
+                        <h5 class="section__text-heading">Особливості</h5>
+                        <h2 class="features__text-caption">Цікаво знати</h2>
+                    </div>
+                </div>
+                <div class="features__block-info">
+                    <div class="features__block-info-one">
+                        <div class="features__block-info-one-cont">
+                            <div class="oval">
+                                <img class="combined-png" src="./png/Combined Shape.png" alt="">
+                            </div>
+                            <h4 class="features__block-info-one-heading">Розвиток</h4>
+                            <p class="features__block-info-one-text">Тут можна прокачати свої навички, включаючи уважність та стійкість.</p>
+                        </div>
+                    </div>
+                    <div class="features__block-info-two">
+                        <div class="features__block-info-two-cont">
+                            <h4 class="features__block-info-two-heading">Доступність</h4>
+                            <p class="features__block-info-two-text">Все легко, цікаво та зрозуміло.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="space-run" class="webflow">
+                <img class="pic-two" src="./png/pic2.png" alt="">   
+            <div class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Space run</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Артемій Водяницький</p>
+                    <p class="webflow__text-lead">Ця гра створена на базі Dino Game, але в нас вона зроблена більш якісно стилізована.</p>
+                    <a href="https://artemiy4430.github.io/spaceRun/"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+            <div id="rps" class="webflow">  
+                <div class="wedflow-content">
+                    <div class="wedflow__block-text">
+                        <h5 class="section__text-heading">RPS</h5>
+                        <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                        <p class="webflow__text-big">Артемій Водяницький</p>
+                        <p class="webflow__text-lead">Це комп'ютерна версія: камінь, ножиці, бумага.</p>
+                        <a href="https://artemiy4430.github.io/rps/"><button class="webflow-button" type="button">перейти</button></a>
+                    </div>
+                </div>
+                <img class="pic-two" src="./png/pic3.png" alt=""> 
+            </div>
+            <div id="service" class="service">
+                <div class="service__block-text">
+                    <h5 class="section__text-heading">деталі</h5>
+                    <h3 class="service__text-caption">Що потрібно знати</h3>
+                </div>
+                <div class="service__containers">
+                    <div class="service__container-one">
+                        <div class="service__container-content">
+                            <div class="oval">
+                                <img class="png-bag" src="./png/Bag.png" alt="">
+                            </div>
+                            <h4 class="service__content-name">Розширення</h4>
+                            <p class="service__text-lead">Наші ігри не підтримують мобільну версію</p>
+                            <button class="button__open-bag" onclick="document.querySelector('.modal__service-bag').showModal()">
+                                Дізнавайтеся більше
+                            </button>
+                        
+                            <dialog class="modal__service-bag">
+                                    <h1 class="text">Розширення</h1>
+                                    <p>Деякі ігри можуть бути технічно складними або вимагати потужного обладнання, яке не забезпечується на мобільних пристроях. Це пов'язано з графікою. Також головною причиною є складне управління, яке важко адаптувати до сенсорних екранів мобільних пристроїв. Розробка і підтримка мобільних ігор може вимагати значних витрат, і не всі ігри можуть очікувати високого рівня продажів на мобільних платформах. Іноді розробники не мають прав на створення мобільних версій певних ігор через обмеження ліцензій або прав на інтелектуальну власність.</p>
+                                    <button class="button__close-bag" onclick="document.querySelector('.modal__service-bag').close()">
+                                        X
+                                    </button>
+                            </dialog>
+                       </div>
+                    </div>
+                    <div class="service__container-two">
+                        <div class="service__container-content">
+                            <div class="oval">
+                                <img class="png-tv" src="./png/Tv.png" alt="">
+                            </div>
+                            <h4 class="service__content-name">Програмування</h4>
+                            <p class="service__text-lead">Створювали за допомогою HTML CSS JS</p>
+                            <button class="button__open-tv" onclick="document.querySelector('.modal__service-tv').showModal()">
+                                Вивчайте більше
+                            </button>
+                        
+                            <dialog class="modal__service-tv">
+                                <h1 class="text">Програмування</h1>
+                                <p>Програмування — процес проєктування, написання, тестування, зневадження і підтримки комп'ютерних програм. CSS - це спеціальна мова стилю сторінок, що використовується для опису їхнього зовнішнього вигляду. HTML - стандартизована мова розмітки документів для перегляду вебсторінок у браузері. JS - мова програмування, яка дозволяє створювати динамічно оновлюваний контент, керувати мультимедіа, анімувати зображення та робити багато іншого. Саме це ми вивчаємо на курсах front end <a href="https://goiteens.com/ru/" target="_blank">GoITeens</a>.</p>
+                                <button class="button__close-tv" onclick="document.querySelector('.modal__service-tv').close()">
+                                    X
+                                </button>
+                            </dialog>
+                        </div>
+                    </div>
+                    <div class="service__container-three">
+                        <div class="service__container-content">
+                            <div class="oval">
+                                <img class="png-shape" src="./png/Shape.png" alt="">
+                            </div>
+                            <h4 class="service__content-name">Зображення</h4>
+                            <p class="service__text-lead">Ми не порушуємо авторські права, тому всі зображення брали на просторах інтернету</p>
+                            <button class="button__open-shape" onclick="document.querySelector('.modal__service-shape').showModal()">
+                                Перевірте
+                            </button>
+                        
+                            <dialog class="modal__service-shape">
+                                <h1 class="text">Зображення</h1>
+                                <p>Усі зображення, використані на цьому веб-сайті, взяті з відкритих джерел, таких як Google Зображення, з метою навчання та ілюстрації. Ми робимо все можливе, щоб вказати джерело та авторство для кожного зображення, а також дотримуємося усіх вимог авторського права.
+
+                                    Якщо ви є власником будь-якого зображення, яке ми використовуємо на цьому сайті, і бажаєте, щоб його було вилучено або вказано посилання на вас, будь ласка, зв'яжіться з нами</p>
+                                <button class="button__close-shape" onclick="document.querySelector('.modal__service-shape').close()">
+                                    X
+                                </button>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div id="present" class="present">
+                <div class="present-content">
+                    <img class="star-png" src="./png/star.png" alt="">
+                    <img class="present-png" src="./png/Present.png" alt="">
+                    <div class="present__block-text">
+                        <div class="present__block-text-content">
+                            <h5 class="section__text-heading">навчання</h5>
+                            <h4 class="present__content-caption">GoITeens - це круто!</h4>
+                            <a href="https://goiteens.com/ru/" target="_blank"><button class="present-button" type="button">Детальніше</button></a>
+                        </div>
+                    </div>
+                    <div class="present__block-info">
+                        <div class="present__block-info-content">
+                            <p class="present__block-info-lead">Завдяки GoITeens ми навчаємося багато цікавого</p>
+                        </div>
+                    </div>
+                    <div class="present__block-img">
+                        <img class="cloud-png" src="./png/Path.png" alt="">
+                        <img class="block-png" src="./png/block.webp" alt="">
+                    </div>
+                </div>
+            </div>   
+            <div id="gorob" class="webflow">   
+            <div class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Горобець</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Констянтин Барнінець</p>
+                    <p class="webflow__text-lead">Тут ти можеш проводити свій вільний час та робити свій рекорд все краще і краще</p>
+                    <a href="https://kostabar.github.io/gorob/"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+            <img class="pic-two" src="./png/pic4.png" alt="">
+        </div>
+        <div id="tic-tac-toe" class="webflow">
+            <img class="pic-two" src="./png/pic5.png" alt="">   
+        <div class="wedflow-content">
+            <div class="wedflow__block-text">
+                <h5 class="section__text-heading">Хрестики-нулики</h5>
+                <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                <p class="webflow__text-big">Констянтин Барнінець</p>
+                <p class="webflow__text-lead">Це крута гра, в яку можна пограти як і одній людині, так і з кимось</p>
+                <a href="https://kostabar.github.io/-tic-tac-toe/"><button class="webflow-button" type="button">Перейти</button></a>
+            </div>
+        </div>
+    </div>
+            <div id="testimonials" class="testimonials">
+                <div class="testimoials__block-text">
+                    <h5 class="section__text-heading">Про нас</h5>
+                    <h2 class="testimoials__block-caption">Наші працівники</h2>
+                </div>
+                <div class="testimonials__block-coments">
+                    <div class="block__coments-left">
+                            <div class="coments__left-top">
+                                <div class="coments__left-top-content">
+                                    <img class="coment-stars" src="./png/stars.png" alt="">
+                                    <p class="testimonials-lead">Я, Артем Водяницький, учасник GoITeens, є частиною цього проекту, розробив 2 гри: space run, rps</p>
+                                    <div class="testimonials__block-name">
+                                        <div>
+                                            <img class="oval" src="./png/Photo-one.jpg" alt="">
+                                        </div>
+                                        <div class="people-info">
+                                            <h4 class="block__name">Артемій Водяницький</h4>
+                                            <p class="block-job">Space run & RPS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coments__left-bottom">
+                                <div class="coments__left-bottom-content">
+                                    <img class="coment-stars" src="./png/stars.png" alt="">
+                                    <p class="testimonials-lead">Я вирішив робити ці ігри коли зрозумів, шо 2д платформер робить складно і тоді я робив маленькі ігри, зробив 5 штук і рішив робить клікер</p>
+                                    <div class="testimonials__block-name">
+                                        <div>
+                                            <img class="oval" src="./png/Photo-two.jpg" alt="">
+                                        </div>
+                                        <div class="people-info">
+                                            <h4 class="block__name">Артем Божко</h4>
+                                            <p class="block-job">Twitor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="block__coments-right">
+                        <div class="coments__right-top">
+                            <div class="coments__right-top-content">
+                                <img class="coment-stars" src="./png/stars.png" alt="">
+                                <p class="testimonials-lead">Я працювала над створенням головної сторінки, тому що мені це більше до душі.</p>
+                                <div class="testimonials__block-name">
+                                    <div>
+                                        <img class="oval" src="./png/Photo-three.png" alt="">
+                                    </div>
+                                    <div class="people-info">
+                                        <h4 class="block__name">Поліна Лавриненко</h4>
+                                        <p class="block-job">Головна сторінка</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coments__right-bottom">
+                            <div class="coments__right-bottom-content">
+                                <img class="coment-stars" src="./png/stars.png" alt="">
+                                <p class="testimonials-lead">Я Констянтин і навчаюся в онлайн школі GoITeens.Я учасник маштабного проекта, в яком взяв участь та створив 2 гри. Мені дуже сподобалась командна робота, я вдячний всім учасникам і нашій школі GoITeens.</p>
+                                <div class="testimonials__block-name">
+                                    <div>
+                                        <img class="oval" src="./png/Photo-four.jpg" alt="">
+                                    </div>
+                                    <div class="people-info">
+                                        <h4 class="block__name">Констянтин Барнінець</h4>
+                                        <p class="block-job">Хрестики нулики & Горобець</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="webflow">
+                <img class="pic-two" src="./png/pic6.svg" alt="">   
+            <div id="clicker" class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Клікер</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Артем Божко</p>
+                    <p class="webflow__text-lead">Клікер, який має три режима гри</p>
+                    <a href="https://artib228.github.io/new-project/Clicker/index.html"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+            </div>
+            <div id="randomNumberGuesser" class="webflow">  
+            <div class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Вгадай число</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Артем Божко</p>
+                    <p class="webflow__text-lead">Вгадай число від 1 до 100 за 10 спроб</p>
+                    <a href="https://artib228.github.io/new-project/RandomNumberGuesser/index.html"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+            <img class="pic-two" src="./png/pic7.svg" alt=""> 
+            </div>
+            <div id="precisionTest" class="webflow">
+                <img class="pic-two" src="./png/pic8.svg" alt="">   
+            <div class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Тест на точність</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Артем Божко</p>
+                    <p class="webflow__text-lead">Зупини таймер на вказаному часі</p>
+                    <a href="https://artib228.github.io/new-project/PrecisionTest/index.html"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+            </div>
+            <div id="reactionTest" class="webflow">   
+            <div class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Тест на реакцію</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Артем Божко</p>
+                    <p class="webflow__text-lead">Коли кнопка стане червоною, треба якнайшвидше її натиснути</p>
+                    <a href="https://artib228.github.io/new-project/ReactionTest/index.html"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+            <img class="pic-two" src="./png/pic9.svg" alt="">
+            </div>
+            <div id="typingSpeedTest" class="webflow">
+                <img class="pic-two" src="./png/pic10.svg" alt="">   
+            <div class="wedflow-content">
+                <div class="wedflow__block-text">
+                    <h5 class="section__text-heading">Швидкісне друкування</h5>
+                    <h2 class="wedflow__text-caption">Спробуй себе в цій грі!</h2>
+                    <p class="webflow__text-big">Артем Божко</p>
+                    <p class="webflow__text-lead">Тут треба друкувати на швидкість, а також є багато текстів, які обираються рандомно</p>
+                    <a href="https://artib228.github.io/new-project/TypingSpeedTest/index.html"><button class="webflow-button" type="button">Перейти</button></a>
+                </div>
+            </div>
+            </div>
+            <div id="prising" class="pricing">
+                <div class="pricing__block-text">
+                    <h5 class="section__text-heading">донати</h5>
+                    <h2 class="pricing__text-caption">Розвиток компанії</h2>
+                </div>
+                <div class="pricing-container">
+                    <div class="price-left">
+                        <div class="price__content">
+                            <h5 class="section__text-heading">Швидкість</h5>
+                            <h3 class="pricing__text-money">₴500</h3>
+                            <p class="pricing__text-lead">Завдяки вам, ми будемо будемо працювати швидше.</p>
+                            <div class="price-block">
+                                <img class="plus" src="./png/plus.png" alt="">
+                                <p class="price__text-plus">Швидкі оновлення</p>
+                            </div>
+                            <div class="price-block">
+                                <img class="minus" src="./png/minus.png" alt="">
+                                <p class="price__text-minus">Цікавіші ігри</p>
+                            </div>
+                            <div class="price-block">
+                                <img class="minus" src="./png/minus.png" alt="">
+                                <p class="price__text-minus">Прибуток від нашої праці</p>
+                            </div>
+                            <button class="price-button" type="button" onclick="document.querySelector('.modal__popular').showModal()">Contact Us</button>
+                            <dialog class="modal__popular">
+                                <h1 class="text">Донат</h1>
+                                <p class="modal-text">Звітуйте про нашу роботу і допомагайте нам стати кращими! Любі друзі та підтримувачі! Ми раді привітати вас на нашому сайті і поділитися з вами нашою місією та завданнями. Ми працюємо не покладаючи рук, щоб забезпечити вас якісним та корисним контентом, але нам потрібна ваша підтримка, щоб зробити нашу роботу ще кращою. Наша крарта: **** **** **** ****</p>
+                                <button class="button__close-popular" onclick="document.querySelector('.modal__popular').close()">
+                                    X
+                                </button>
+                            </dialog>
+                        </div>
+                    </div>
+                    <div class="price__popular">
+                        <div class="price__popular-content">
+                            <div class="popular">Popular</div>
+                            <h5 class="section__text-heading">Цікавість</h5>
+                            <h3 class="pricing__text-money">₴1500</h3>
+                            <p class="pricing__text-lead">Завдяки вам, ми будемо створювати більше цікавого контенту.</p>
+                            <div class="price-block">
+                                <img class="plus" src="./png/plus.png" alt="">
+                                <p class="price__text-plus">Швидкі оновлення</p>
+                            </div>
+                            <div class="price-block">
+                                <img class="plus" src="./png/plus.png" alt="">
+                                <p class="price__text-plus">Цікавіші ігри</p>
+                            </div>
+                            <div class="price-block">
+                                <img class="minus" src="./png/minus.png" alt="">
+                                <p class="price__text-minus">Прибуток від нашої праці</p>
+                            </div>
+                            <button class="price__popular-button" type="button" onclick="document.querySelector('.modal__popular').showModal()">Contact Us</button>
+                            <dialog class="modal__popular">
+                                <h1 class="text">Донат</h1>
+                                <p>Звітуйте про нашу роботу і допомагайте нам стати кращими! Любі друзі та підтримувачі! Ми раді привітати вас на нашому сайті і поділитися з вами нашою місією та завданнями. Ми працюємо не покладаючи рук, щоб забезпечити вас якісним та корисним контентом, але нам потрібна ваша підтримка, щоб зробити нашу роботу ще кращою. Наша крарта: **** **** **** ****</p>
+                                <button class="button__close-popular" onclick="document.querySelector('.modal__popular').close()">
+                                    X
+                                </button>
+                            </dialog>
+                        </div>
+                    </div>
+                    <div class="price-right">
+                        <div class="price__content">
+                            <h5 class="section__text-heading">Швидкість+Цікавість</h5>
+                            <h3 class="pricing__text-money">₴2200</h3>
+                            <p class="pricing__text-lead">Завдяки вам, ми будемо працювати більше.</p>
+                                <div class="price-block">
+                            <img class="plus" src="./png/plus.png" alt="">
+                                <p class="price__text-plus">Швидкі оновлення</p>
+                            </div>
+                            <div class="price-block">
+                                <img class="plus" src="./png/plus.png" alt="">
+                                <p class="price__text-plus">Цікавіші ігри</p>
+                            </div>
+                            <div class="price-block">
+                                <img class="plus" src="./png/plus.png" alt="">
+                                <p class="price__text-plus">Прибуток від нашої праці</p>
+                            </div>
+                            <button class="price-button" type="button" onclick="document.querySelector('.modal__popular').showModal()">Contact Us</button>
+                            <dialog class="modal__popular">
+                                <h1 class="text">Донат</h1>
+                                <p>Звітуйте про нашу роботу і допомагайте нам стати кращими! Любі друзі та підтримувачі! Ми раді привітати вас на нашому сайті і поділитися з вами нашою місією та завданнями. Ми працюємо не покладаючи рук, щоб забезпечити вас якісним та корисним контентом, але нам потрібна ваша підтримка, щоб зробити нашу роботу ще кращою. Наша крарта: **** **** **** ****</p>
+                                <button class="button__close-popular" onclick="document.querySelector('.modal__popular').close()">
+                                    X
+                                </button>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer-row">
+                <h4 class="foteer-title">Personal</h4>
+                <div class="footer-col">
+                    <h5 class="footer__text-heading">Меню</h5>
+                    <ul>
+                        <li><a href="#testimonials">Про нас</a></li>
+                        <li><a href="#service">Інформація</a></li>
+                        <li><a href="#prising">Донати</a></li>
+                        <li><a href="#present">Навчання</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 class="footer__text-heading">Ігри</h5>
+                    <ul>
+                        <li><a href="#space-run">SPACE RUN</a></li>
+                        <li><a href="#rps">RPS</a></li>
+                        <li><a href="#gorob">ГОРОБЕЦЬ</a></li>
+                        <li><a href="#tic-tac-toe">ХРЕСТИКИ-НУЛИКИ</a></li>
+                        <li><a href="#clicker">КЛІКЕР</a></li>
+                        <li><a href="#randomNumberGuesser">ВГАДАЙ ЧИСЛО</a></li>
+                        <li><a href="#precisionTest">ТЕСТ НА ТОЧНІСТЬ</a></li>
+                        <li><a href="#reactionTest">ТЕСТ НА РЕАКЦІЮ</a></li>
+                        <li><a href="#typingSpeedTest">ШВИДКІСНЕ ДРУКУВАННЯ</a></li>
+                    </ul>
+                </div>
+                <div class="foteer__block-png">
+                    <div class="foteer-png">
+                        <img src="./png/instagram.png" alt="">
+                    </div>
+                    <div class="foteer-png">
+                        <img src="./png/facebook.png" alt="">
+                    </div>
+                    <div class="foteer-png">
+                        <img src="./png/twitter.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__block-bottom">
+                <p class="footer__text-lead">Copyright © 2022 Laaqiq.</p>
+                <p class="footer__text-lead">All Rights Reserved.</p>
+                <div class="footer__bottom-link">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
